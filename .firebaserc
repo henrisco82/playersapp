@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "playerapp-ae6e7": {
+      "hosting": {
+        "playersapp": [
+          "playerapp-ae6e7"
+        ]
+      }
+    }
+  }
+}

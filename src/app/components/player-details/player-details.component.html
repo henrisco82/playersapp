@@ -1,0 +1,20 @@
+<div class="card">
+  <h3 class="card-header">
+      {{ player.firstName }}  {{ player.lastName }}
+  </h3>
+
+  <div class="card-body">
+      <ul class="list-group">
+          <li class="list-group-item">Age: {{ player.age }}</li>
+          <li class="list-group-item">Country: {{ player.country }}</li>
+          <li class="list-group-item">Position: {{ player.position }}</li>
+      </ul>
+  </div>
+
+  <div class="card-footer">
+      <div class="btn-group">
+          <a [routerLink]="['/player/edit/', id]" class="btn btn-dark">Edit</a>
+          <button (click)="onDeleteClick()"  class="btn btn-danger">Delete</button>
+      </div>
+  </div>
+</div>
